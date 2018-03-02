@@ -1,0 +1,8 @@
+nf = int(input())
+ht = int(input())
+vph = float(input())
+numero = (nf)
+salario = (ht * vph)
+salario_srt = "{:.2f}".format(salario)
+print ("NUMBER =",numero)
+print ("SALARY = U$",salario_srt)
