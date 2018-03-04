@@ -1,2 +1,2 @@
 # UriAcademic
-exercises of academic discipline programming uri
+<i> exercises of academic discipline programming uri
