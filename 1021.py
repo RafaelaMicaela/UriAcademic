@@ -1,17 +1,27 @@
-notas = [100,50,20,10,5,2]
-moedas = [1.00,0.50,0.25,0.10,0.05,0.01]
-n = float(input())
+valorlido = float(input())
+valorlido = valorlido+0.001
 print ("NOTAS:")
-for x in notas:
-	if n >= x:
-		print("{0} nota(s) de R$ {1}.00".format(n//x,x))
-		n %= x
-	else:
-		print("{0} nota(s) de R$ {1}.00".format(n//x,x))
-print ("MOEDAS:")		
-for y in moedas:
-	if n >= y:
-		print("{0} moeda(s) de R$ {1}".format(n//y,y))
-		n %= y
-	else:
-		print("{0} moeda(s) de R$ {1}".format(n//y,y))	
+print (int(valorlido//100),"nota(s) de R$ 100.00")
+quantidade = (valorlido % 100)
+print (int(quantidade//50),"nota(s) de R$ 50.00")
+quantidade = (quantidade % 50)
+print (int(quantidade//20),"nota(s) de R$ 20.00")
+quantidade = (quantidade % 20)
+print (int(quantidade//10),"nota(s) de R$ 10.00")
+quantidade = (quantidade % 10)
+print (int(quantidade//5),"nota(s) de R$ 5.00")
+quantidade = (quantidade % 5)
+print (int(quantidade//2),"nota(s) de R$ 2.00")
+quantidade = (quantidade % 2)
+print ("MOEDAS:")
+print (int(quantidade//1),"moeda(s) de R$ 1.00")
+quantidade = (valorlido % 1)
+print (int(quantidade//0.50),"moeda(s) de R$ 0.50")
+quantidade = (quantidade % 0.50)
+print (int(quantidade//0.25),"moeda(s) de R$ 0.25")
+quantidade = (quantidade % 0.25)
+print (int(quantidade//0.10),"moeda(s) de R$ 0.10")
+quantidade = (quantidade % 0.10)
+print (int(quantidade//0.05),"moeda(s) de R$ 0.05")
+quantidade = (quantidade%0.05)
+print (int(quantidade//0.01),"moeda(s) de R$ 0.01")
