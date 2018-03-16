@@ -1,0 +1,5 @@
+nm,cp = input().split()
+c = int(nm)
+n = int(cp)
+termino = ( c % n)
+print (termino)
