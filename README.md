@@ -1,2 +1,2 @@
 # UriAcademic
-<i> <u> exercises of academic discipline programming uri </u> </i>
+<b> <i>  exercises of academic discipline programming uri </i> </b>
