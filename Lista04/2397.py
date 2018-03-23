@@ -1,10 +1,13 @@
-a,b,c = map(int, input().split())
-if (a<b+c) and (b<c+a) and (c<b+a):
-	if (a*a < b*b + c*c):
-		print("a")
-	elif(a*a > b*b + c*c):
-		print("o")
-	if(a*a == b*b + c*c):
-		print("r")
-else:
+a,b,c = [int(i) for i in input().split()]
+if a < b:
+    a,b = b,a
+if a < c:
+    a,c = c, a
+if (a>= b + c):
 	print("n")
+elif(a*a < b*b + c*c):
+	print("a")
+elif(a*a > b*b + c*c):
+	print("o")
+elif(a*a == b*b + c*c):
+	print("r")
