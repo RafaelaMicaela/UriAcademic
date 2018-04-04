@@ -13,6 +13,6 @@ n = int(input())
 for i in range(n):
     x = int(input())
     if ehPrimo(x):
-        print("%d eh primo" % x)
+        print('{:d}'.format(x),"eh primo")
     else:
-        print("%d nao eh primo" % x)
+        print('{:d}'.format(x),"nao eh primo")
