@@ -1,0 +1,5 @@
+n = int(input())
+data = input().split()
+menor = min(map(int, data))
+print("Menor valor:", menor)
+print("Posicao:", data.index(str(menor)))
