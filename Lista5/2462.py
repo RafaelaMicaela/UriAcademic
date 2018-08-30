@@ -1,0 +1,5 @@
+pa,cb,pb,ca = input().split()
+pah,pam = pa.split(":")
+cbh,cbm = cb.split(":")
+pbh,pbm = pb.split(":")
+cah,cam = ca.split(":")
