@@ -7,20 +7,58 @@ def maior2(a, b):
 
 x = int(input())
 y = int(input())
-print(maior2(x,y))
+print("Questão 1", maior2(x,y))
 
+def maior5(a,b,c,d,f):
+    lista = [a,b,c,d,f]
+    maior = lista[0]
+    for i in range(1,5):
+        if (maior < lista[i]):
+            maior = lista[i]
+    return maior
 
-def maior5 (a, b, c, d, e):
-    return 0
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+f = int(input())
+print("Questao 2",maior5(a,b,c,d,f))
 
 def quantidade_de_vogais(s):
-    return 0
+    quantidadeDeVogais = 0
+    for i in range(len(s)):
+        if (s[i] == "a" or s[i] == "A"):
+            quantidadeDeVogais = quantidadeDeVogais + 1
+        elif(s[i] == "e" or s[i] == "E"):
+            quantidadeDeVogais = quantidadeDeVogais + 1
+        elif(s[i] == "i" or s[i] == "I"):
+            quantidadeDeVogais = quantidadeDeVogais + 1
+        elif(s[i] == "o" or s[i] == "O"):
+            quantidadeDeVogais = quantidadeDeVogais + 1
+        elif(s[i] == "u" or s[i] == "U"):
+            quantidadeDeVogais = quantidadeDeVogais + 1
+    return quantidadeDeVogais
+
+oracao = input()
+print("Questao 3:", quantidade_de_vogais(oracao))
+
 
 def impar(n):
-    return False
+    resultado = False
+    if (n % 2 != 0):
+        resultado = True
+    return resultado
+
+numero = int(input())
+print("Questao 4:", impar(numero))
 
 def conta_palavras(texto):
-    return 0
+   palavras = [] 
+   palavras = texto.split()
+   return len(palavras)
+
+texto = input()
+print("Questao 5:", conta_palavras(texto))
 
 def intervaloab(n1, n2):
     return []
