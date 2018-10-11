@@ -61,7 +61,18 @@ texto = input()
 print("Questao 5:", conta_palavras(texto))
 
 def intervaloab(n1, n2):
-    return []
+    lista = []
+    if (n1 >= n2):
+        for i in range(n2,n1+1):
+            lista.append(i)
+    elif (n2 > n1):
+        for i in range(n1, n2+1):
+            lista.append(i)
+    return lista
+
+a = int(input())
+b = int(input())
+print("Questao 6:", intervaloab(a,b))
 
 def fatorial(n):
     return 0
