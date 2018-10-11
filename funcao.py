@@ -117,7 +117,34 @@ def mmc (n1, n2):
     return 0
 
 def transcreve_numero(telefone):
-    return ""
+    lista_telefone = []
+    for i in telefone:
+        if i == '0':
+            lista_telefone.append('zero')
+        elif i == '1':
+            lista_telefone.append('um')
+        elif i == '2':
+            lista_telefone.append("dois")
+        elif i == '3':
+            lista_telefone.append('tres')
+        elif i == '4':
+            lista_telefone.append("quatro")
+        elif i == '5':
+            lista_telefone.append('cinco')
+        elif i == '6':
+            lista_telefone.append("seis")
+        elif i == '7':
+            lista_telefone.append('sete')
+        elif i == '8':
+            lista_telefone.append("oito")
+        elif i == '9':
+            lista_telefone.append("nove")
+    return lista_telefone
+
+telefone = input()
+print("Questao 13:",transcreve_numero(telefone))
+        
+
 
 def coincidencia_lista(lista1, lista2):
     return []
