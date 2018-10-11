@@ -75,7 +75,13 @@ b = int(input())
 print("Questao 6:", intervaloab(a,b))
 
 def fatorial(n):
-    return 0
+    fat = 1
+    for i in range(1,n+1):
+        fat = (fat * i)
+    return fat
+
+n = int(input())
+print("Questao 7:", fatorial(n))
 
 def divisores(n):
     return []
