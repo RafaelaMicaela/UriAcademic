@@ -84,10 +84,28 @@ n = int(input())
 print("Questao 7:", fatorial(n))
 
 def divisores(n):
-    return []
+    numero_divisor = []
+    for i in range(1,n+1):
+        if (n % i == 0):
+            numero_divisor.append(i)
+    return numero_divisor
+
+n = int(input())
+print("Questao 8:", divisores(n))
 
 def primo(n):
-    return False
+    primo = True
+    contador_divisores = 0
+    for i in range(1,n+1):
+        if (n % i == 0):
+            contador_divisores += 1
+        if (contador_divisores > 2):
+            primo = False
+            break
+    return primo
+
+n = int(input())
+print("Questao 9:", primo(n))
 
 def primos_entre_si(n1, n2):
     return False
