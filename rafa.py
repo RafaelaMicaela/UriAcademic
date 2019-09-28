@@ -1,1 +1,0 @@
-print("rafaela é imbecil")
